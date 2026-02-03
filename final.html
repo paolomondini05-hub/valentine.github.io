@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Nana</title>
+
+    <!-- Font (same as other pages) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/flower.css" />
+  </head>
+
+  <body>
+    <div id="thankyou"><b>Thank you for being my girlfriend</b></div>
+
+    <div class="final-wrap">
+      <!-- LEFT: Photo + button -->
+      <div class="left-panel">
+        <div class="photo-card">
+          <img class="us-photo" src="images/us.jpg" alt="Us" />
+        </div>
+
+        <div class="photo-caption">My favorite person 💙</div>
+
+        <button class="love-button" id="replayBtn">I love you 💙</button>
+      </div>
+
+      <!-- RIGHT: Tulips (contained so it can't overlap header/photo) -->
+      <div class="right-panel">
+        <div class="flower-box">
+          <div class="flower" id="flowerScene">
+            <div class="f-wrapper">
+              <div class="flower__line"></div>
+              <div class="f">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__leaf flower__leaf--5"></div>
+                <div class="flower__leaf flower__leaf--6"></div>
+                <div class="flower__leaf flower__leaf--7"></div>
+                <div
+                  class="flower__leaf flower__leaf--8 flower__fall-down--pink"
+                ></div>
+              </div>
+            </div>
+
+            <div class="f-wrapper f-wrapper--2">
+              <div class="flower__line"></div>
+              <div class="f">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__leaf flower__leaf--5"></div>
+                <div class="flower__leaf flower__leaf--6"></div>
+                <div class="flower__leaf flower__leaf--7"></div>
+                <div
+                  class="flower__leaf flower__leaf--8 flower__fall-down--yellow"
+                ></div>
+              </div>
+            </div>
+
+            <div class="f-wrapper f-wrapper--3">
+              <div class="flower__line"></div>
+              <div class="f">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__leaf flower__leaf--5"></div>
+                <div class="flower__leaf flower__leaf--6"></div>
+                <div class="flower__leaf flower__leaf--7"></div>
+                <div
+                  class="flower__leaf flower__leaf--8 flower__fall-down--purple"
+                ></div>
+              </div>
+            </div>
+
+            <div class="flower__glass"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Replay / restart the tulip animation
+      const btn = document.getElementById("replayBtn");
+      const scene = document.getElementById("flowerScene");
+
+      btn.addEventListener("click", () => {
+        scene.classList.remove("replay");
+        void scene.offsetWidth; // force reflow
+        scene.classList.add("replay");
+      });
+    </script>
+  </body>
+</html>

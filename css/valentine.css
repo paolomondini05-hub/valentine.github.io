@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL (same as page 2)
+   ========================= */
 body {
   text-align: center;
   margin-top: 30px;
@@ -6,34 +9,64 @@ body {
   color: #ff9494;
 }
 
+/* =========================
+   IMAGE (same as page 2)
+   ========================= */
 img {
-  height: 400px;
-  width: auto;
+  width: min(420px, 90vw);
+  height: auto;
+  border-radius: 16px;
   padding: 10px;
 }
 
+/* =========================
+   MAIN QUESTION (match page 2 headline style)
+   ========================= */
 #valentineQuestion {
-  font-size: 50px;
-  margin-bottom: 10px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 42px;
+  color: #0057ff;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
 }
+
+/* =========================
+   BUTTONS (base matches page 2)
+   ========================= */
 .answerButton {
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
-  margin: 10px;
-  font-family: "courier";
-  margin-bottom: 20px;
-  background-color: #ffe3e1;
-  color: #e67373;
+  margin: 12px;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+
   border-radius: 12px;
   border: 2px solid #ffe3e1;
   box-shadow: 1px 1px 2px #ff9494;
   transition: 0.3s;
 }
 
+/* YES button (same as page 2 .button) */
+.yesButton {
+  background-color: #0057ff;
+  color: white;
+  border-color: #0057ff;
+}
+
+/* NO button (keep your gray style, but same feel) */
+#noButton {
+  background-color: #e6e6e6;
+  color: #444;
+  border-color: #e6e6e6;
+}
+
+/* Hover (same vibe as page 2) */
 .answerButton:hover {
-  background-color: #ff9494;
-  color: #ffe3e1;
-  border: 2px solid #ff9494;
-  box-shadow: 1px 1px 2px #ffe3e1;
+  transform: scale(1.03);
+  box-shadow: 1px 1px 6px #ff9494;
 }

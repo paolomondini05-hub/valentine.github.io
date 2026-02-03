@@ -1,60 +1,112 @@
+/* =========================
+   GLOBAL (same as other pages)
+   ========================= */
 body {
   text-align: center;
   margin-top: 30px;
   font-family: "Courier";
   background-color: #fff5e4;
   color: #ff9494;
-  display: flex;
-  flex-direction: column;
-}
-h1 {
-  font-size: 40px;
 }
 
-form .header {
-  width: 100%;
-  display: flex;
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: #ff9494;
+/* =========================
+   TITLE (match page 1 + page 2 blue headline)
+   ========================= */
+h1,
+#dateTitle {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 42px;
+  color: #0057ff;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin: 0 0 22px;
 }
 
+/* =========================
+   FORM LAYOUT
+   ========================= */
 .form-group {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  font-size: 25px;
+  align-items: center;
+  gap: 12px;
 }
 
-.button {
-  padding: 6px 10px;
-  font-size: 15px;
-  cursor: pointer;
-  margin: 10px;
-  font-family: "courier";
-  margin-bottom: 10px;
+/* Label (match the same blue Montserrat feel) */
+.form-group label {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 26px;
+  color: #0057ff;
+  margin: 0 0 8px;
+}
+
+/* Input + button in a row */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* =========================
+   DATE INPUT (consistent palette + font)
+   ========================= */
+input[type="date"] {
+  padding: 12px 16px;
+  font-size: 18px;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+
   background-color: #ffe3e1;
   color: #e67373;
-  border-radius: 12px;
+
+  border-radius: 18px;
   border: 2px solid #ffe3e1;
+  box-shadow: 1px 1px 2px #ff9494;
+
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+
+input[type="date"]:hover {
+  box-shadow: 1px 1px 6px #ff9494;
+}
+
+input[type="date"]:focus {
+  border-color: #0057ff;
+}
+
+/* =========================
+   SUBMIT BUTTON (same as your “YES” + page 2 button)
+   ========================= */
+.button {
+  padding: 12px 22px;
+  font-size: 20px;
+  cursor: pointer;
+
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 700;
+
+  background-color: #0057ff;
+  color: white;
+
+  border-radius: 18px;
+  border: 2px solid #0057ff;
+
+  box-shadow: 1px 1px 2px #ff9494;
   transition: 0.3s;
 }
 
 .button:hover {
-  background-color: #ff9494;
-  color: #ffe3e1;
-  border: 2px solid #ff9494;
+  transform: scale(1.03);
+  box-shadow: 1px 1px 6px #ff9494;
 }
 
-input[type="date"] {
-  padding: 6px 10px;
-  font-size: 15px;
-  cursor: pointer;
-  margin: 10px;
-  font-family: "courier";
-  margin-bottom: 10px;
-  background-color: #ffe3e1;
-  color: #e67373;
-  border-radius: 12px;
-  border: 2px solid #ffe3e1;
-}
+

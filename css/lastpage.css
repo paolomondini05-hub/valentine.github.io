@@ -1,3 +1,6 @@
+/* =========================
+   GLOBAL (same as page 1)
+   ========================= */
 body {
   text-align: center;
   margin-top: 30px;
@@ -5,31 +8,81 @@ body {
   background-color: #fff5e4;
   color: #ff9494;
 }
+
+/* =========================
+   IMAGE STYLING
+   ========================= */
+img {
+  width: min(420px, 90vw);
+  height: auto;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+/* =========================
+   TOP TITLE: YAYYYYY
+   EXACT SAME STYLE AS PAGE 1 QUESTION
+   ========================= */
 #thankyou {
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 42px;
+  color: #0057ff;
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin-bottom: 12px;
 }
-.rizz {
-  margin-bottom: 10 px;
+
+/* =========================
+   WAITTT TEXT
+   FORCE SAME FONT + COLOR AS PAGE 1
+   ========================= */
+h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 56px;
+  color: #0057ff !important; /* hard override */
+  text-transform: uppercase;
+  letter-spacing: -1.5px;
+  margin: 28px 0 18px;
 }
+
+/* =========================
+   PRESS PLAY TEXT
+   ========================= */
+.play-text {
+  margin: 12px 0;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  color: #0057ff;
+}
+
+/* =========================
+   PROMISE BUTTON
+   SAME AS PAGE 1 "YES" BUTTON
+   ========================= */
 .button {
   padding: 10px 20px;
   font-size: 18px;
   cursor: pointer;
-  margin: 10px;
-  font-family: "courier";
-  margin-bottom: 20px;
-  background-color: #ffe3e1;
-  color: #e67373;
+  margin: 20px;
+
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+
+  background-color: #0057ff;
+  color: white;
   border-radius: 12px;
-  border: 2px solid #ffe3e1;
+  border: 2px solid #0057ff;
   box-shadow: 1px 1px 2px #ff9494;
   transition: 0.3s;
 }
 
+/* Hover — subtle, consistent */
 .button:hover {
-  background-color: #ff9494;
-  color: #ffe3e1;
-  border: 2px solid #ff9494;
-  box-shadow: 1px 1px 2px #ffe3e1;
+  transform: scale(1.03);
+  box-shadow: 1px 1px 6px #ff9494;
 }

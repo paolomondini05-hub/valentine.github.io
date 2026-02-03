@@ -3,30 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Be My Valentine</title>
+    <title>FOR NANA</title>
+
+    <!-- Font (same as page 2) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/valentine.css" />
   </head>
+
   <body>
-    <div id="valentineQuestion"><b>Will you be my valentine?</b></div>
-    <button class="answerButton" onclick="location.href='thankyou.html'">
-      Yes
+    <h1 id="valentineQuestion">Nana, will you be my valentine? Pls 🥺</h1>
+
+    <button class="answerButton yesButton" onclick="location.href='thankyou.html'">
+      Yes🥹🥹
     </button>
-    <button class="answerButton" id="noButton">I no no wanna o(╥﹏╥)o</button>
+
+    <button class="answerButton" id="noButton">No😭😭</button>
+
     <br />
-    <img src="cat.gif" alt="cat asking question" class="responsive" />
+
+    <img src="images/cat.gif" alt="cat asking question" />
 
     <script>
-      document
-        .getElementById("noButton")
-        .addEventListener("click", function () {
-          var yesButton = document.querySelector(
-            'button[onclick*="thankyou.html"]'
-          );
-          var currentFontSize = parseInt(
-            window.getComputedStyle(yesButton).fontSize
-          );
-          yesButton.style.fontSize = currentFontSize + 10 + "px"; // Increase font size by 5px
-        });
+      document.getElementById("noButton").addEventListener("click", function () {
+        var yesButton = document.querySelector(".yesButton");
+        var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+        yesButton.style.fontSize = currentFontSize + 10 + "px";
+      });
     </script>
   </body>
 </html>
